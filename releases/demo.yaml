@@ -1,21 +1,26 @@
 ---
 apiVersion: helm.fluxcd.io/v1
----
 kind: HelmRelease
 metadata:
-  name: demo
+  name: mongodb
   namespace: demo
   annotations:
-    fluxcd.io/tag.nginx: semver:~0.1
-    fluxcd.io/automated: 'true'
+    fluxcd.io/automated: "false"
+    fluxcd.io/tag.chart-image: semver:~4.0
 spec:
-  releaseName: demo
+  releaseName: mongodb
   chart:
-    git: git@github.com:dbaskakov/flux
-    ref: master
-    path: charts/
+    repository: https://kubernetes-charts.storage.googleapis.com/
+    name: mongodb
+    version: 7.6.3
   values:
-    nginx:
-      image:
-        repository: nginx
-        tag: 1.19.1
+    image:
+      repository: bitnami/mongodb
+      tag: 4.0.13
+    usePassword: false
+    persistence:
+      enabled: false
+    securityContext:
+      enabled: true
+      fsGroup: 0
+      runAsUser: 0
