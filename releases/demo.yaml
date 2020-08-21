@@ -6,7 +6,7 @@ metadata:
   name: demo
   namespace: demo
   annotations:
-    fluxcd.io/tag.comment: semver:~0.1
+    fluxcd.io/tag.nginx: semver:~0.1
     fluxcd.io/automated: 'true'
 spec:
   releaseName: demo
