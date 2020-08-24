@@ -5,3 +5,38 @@ metadata:
   labels:
     name: demo
   name: demo
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  labels:
+    name: monitoring
+  name: monitoring
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  labels:
+    name: logging
+  name: logging
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  labels:
+    name: ingress-nginx
+  name: ingress-nginx
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  labels:
+    name: dashboards
+  name: dashboards
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  labels:
+    name: cert-manager
+  name: cert-manager
