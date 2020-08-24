@@ -13,6 +13,10 @@ spec:
     repository: https://kubernetes-charts.storage.googleapis.com/
     name: mongodb
     version: 7.6.3
+  # chart:
+  #   git: git@github.com:czm41k/reddit-flux
+  #   ref: master
+  #   path: charts/
   values:
     image:
       repository: bitnami/mongodb
