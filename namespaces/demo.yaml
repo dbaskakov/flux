@@ -1,6 +1,14 @@
+---
 apiVersion: v1
 kind: Namespace
 metadata:
   labels:
     name: demo
   name: demo
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  labels:
+    name: gitops-demo
+  name: gitops-demo
