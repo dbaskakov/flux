@@ -6,11 +6,11 @@ metadata:
   namespace: demo
   annotations:
     fluxcd.io/automated: "true"
-    fluxcd.io/tag.chart-image: semver:~1.0
+    fluxcd.io/tag.nginx: semver:~1.0
 spec:
   releaseName: nginx
   chart:
-    git: git@github.com/dbaskakov/flux
+    git: git@github.com:dbaskakov/flux
     ref: master
     path: charts/
   values:
