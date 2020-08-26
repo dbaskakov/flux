@@ -5,12 +5,14 @@
 replicaCount: 1
 
 image:
-  repository: nginx
+  repository: impel1o/nginx
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: "1.0.0"
 
-imagePullSecrets: []
+imagePullSecrets:
+   - name: artifactory
+
 nameOverride: ""
 fullnameOverride: ""
 
