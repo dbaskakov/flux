@@ -10,8 +10,7 @@ image:
   # Overrides the image tag whose default is the chart appVersion.
   tag: "1.0.0"
 
-imagePullSecrets:
-   - name: artifactory
+imagePullSecrets: {}
 
 nameOverride: ""
 fullnameOverride: ""
