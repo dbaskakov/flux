@@ -6,7 +6,7 @@ metadata:
   namespace: demo
   annotations:
     fluxcd.io/automated: "true"
-    fluxcd.io/tag.nginx: semver:~1.0
+    fluxcd.io/nginx: regex:^1.0.*
 spec:
   releaseName: nginx
   chart:
