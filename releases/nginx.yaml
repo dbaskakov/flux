@@ -6,7 +6,7 @@ metadata:
   namespace: ingress-nginx
   annotations:
     fluxcd.io/automated: "false"
-    fluxcd.io/tag.chart-image: semver:~4.0
+    # fluxcd.io/tag.chart-image: semver:~4.0
 spec:
   releaseName: ingress-nginx
   chart:
